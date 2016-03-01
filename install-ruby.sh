@@ -15,4 +15,4 @@ gem install bundler
 cd $HOME
 git clone https://github.com/axamei/sassyinphilly.git
 cd sassyinphilly
-bundle install
+bundle install && npm install
