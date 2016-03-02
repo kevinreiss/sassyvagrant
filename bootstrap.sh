@@ -1,7 +1,7 @@
 sudo -i
 # Installing Jekyll and it's dependencies
 apt-get update
-apt-get install -y build-essential python-pygments curl git libfontconfig libxslt1-dev libxml2-dev libssl-dev
+apt-get install -y build-essential python-pygments curl git libgmp-dev libfontconfig libxslt1-dev libxml2-dev libssl-dev
 
 # # Installing Node and it's dependencies
 apt-get install -y python-software-properties python g++ make
