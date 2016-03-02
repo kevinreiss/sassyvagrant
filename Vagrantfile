@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
     # Box name & download source
     #config.vm.box = "ubuntu-precise12042-x64-vbox43"
     config.vm.box = "ubuntu/trusty64"
-    
+
     # Provisioning
     config.vm.provision :shell, :path => "bootstrap.sh"
     # For RVM
@@ -23,6 +23,6 @@ Vagrant.configure("2") do |config|
     config.vm.network :forwarded_port, host: 3001, guest: 3001, auto_correct: true
 
     # Syncing folder(s)
-    config.vm.synced_folder "../sassyinphilly", "/sassyinphilly", :nfs => false
+    config.vm.synced_folder "../sassyinphilly", "/home/vagrant/sassyinphilly", create: true
 
 end
