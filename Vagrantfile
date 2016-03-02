@@ -18,8 +18,7 @@ Vagrant.configure("2") do |config|
 
 
     # Network
-    config.vm.network :forwarded_port, host: 4000, guest: 4000, auto_correct: true
-    config.vm.network :forwarded_port, host: 9000, guest: 9000, auto_correct: true
+    config.vm.network :forwarded_port, host: 3000, guest: 3000, auto_correct: true
     config.vm.network :forwarded_port, host: 3001, guest: 3001, auto_correct: true
 
     # Syncing folder(s)
